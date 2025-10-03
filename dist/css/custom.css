@@ -1,0 +1,61 @@
+/* extra 3D tilt effect */
+.card-thumb {
+    perspective: 600px;
+}
+.card-image,
+.card-shadow {
+    transition: all 0.25s cubic-bezier(0.42, 0, 0.58, 1);
+    border: 5px solid #005ea6;
+    border-radius: 0.75rem;
+    
+}
+
+.card-image:hover {
+    border: 0px solid;
+    border-radius: 0rem;
+}
+
+.card:hover .card-image {
+    transform: scale(1.05) translateY(-0.5rem) rotateX(25deg);
+}
+.card:hover .card-shadow:nth-child(1) {
+    transform: scale(0.82) translateY(2.4rem) rotateX(5deg);
+}
+.card:hover .card-shadow:nth-child(2) {
+    transform: scale(0.9) translateY(1rem) rotateX(15deg);
+}
+.card:hover .card-shadow:nth-child(3) {
+    transform: scale(1.02) translateY(-0.3rem) rotateX(15deg);
+}
+#gallery-1,
+#gallery-2,
+#gallery-3 {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styles for Scholarship Winners section */
+/* Hover expansion */
+.container .card:hover {
+    flex-grow: 10;
+}
+
+.container .card:hover img {
+    filter: grayscale(0);
+}
+
+/* Title animation */
+.container .card:hover .card__head {
+    top: calc(100% - 2em);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    transform: rotate(0deg) skew(-5deg);
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .mobile-menu-open {
+    display: block !important;
+    }
+}
