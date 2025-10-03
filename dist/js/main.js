@@ -1,4 +1,4 @@
-// Close all galleries
+// close gallery function
 function closeAll() {
     document.querySelectorAll("[id^='gallery-']").forEach((el) => {
     el.classList.add("opacity-0", "scale-110", "pointer-events-none");
@@ -6,14 +6,14 @@ function closeAll() {
     document.body.style.overflow = "auto"; // re-enable background scroll
 }
 
-// Open a specific gallery
+// simple function for opening
 function openGallery(id) {
     closeAll();
     const gallery = document.getElementById(`gallery-${id}`);
     gallery.classList.remove("opacity-0", "scale-110", "pointer-events-none");
     document.body.style.overflow = "hidden"; // lock background scroll
 }
-// Mobile menu toggle
+// mobile toggle button (in progress)
 const menuBtn = document.getElementById("mobile-menu-btn");
 const menu = document.getElementById("mobile-menu");
 menuBtn.addEventListener("click", () => {

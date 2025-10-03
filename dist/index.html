@@ -3,13 +3,13 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind CDN (loads first) -->
+    <!-- Tailwind CDN  -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Your custom CSS (loads after Tailwind so you can override styles) -->
+    <!-- Custom css -->
     <link rel="stylesheet" href="/css/custom.css">
 
-    <!-- Your script -->
+    <!-- Javascript -->
     <script src="/js/main.js"></script>
 
       <!-- AOS CSS -->
@@ -30,7 +30,10 @@
 <!-- Header Section -->
 <header class="relative h-screen overflow-hidden">
 
-<!-- Background Image with subtle parallax -->
+
+  <!-- Need fixing format :/ -->
+
+<!-- Background Image with subtle parallax effect-->
 <div
   class="absolute inset-0 bg-cover bg-center"
   style="background-image: url('images/header-csf-image_enhanced.png'); background-attachment: fixed;"
@@ -43,7 +46,7 @@
 <nav class="relative flex items-center justify-between px-4 md:px-6 py-4 z-20">
   <img src="images/csf logo.png" alt="CSF Logo" class="h-12 md:h-28 drop-shadow-2xl brightness-75" />
 
-  <!-- Mobile menu button -->
+  <!-- Mobile menu button (still needs fixing) -->
   <button id="mobile-menu-btn" class="md:hidden p-2 text-white">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path
@@ -55,7 +58,7 @@
     </svg>
   </button>
 
-  <!-- Desktop menu -->
+  <!-- Desktop menu (navbar) -->
   <ul class="hidden md:flex space-x-6 text-white font-medium text-lg">
     <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
     <li><a href="#scholarships" class="hover:text-blue-400 transition">Scholarships</a></li>
@@ -64,7 +67,7 @@
     <li><a href="#teachers" class="hover:text-blue-400 transition">Teachers</a></li>
   </ul>
 
-  <!-- Mobile menu dropdown -->
+  <!-- Mobile menu dropdown (still in works ;/) -->
   <ul
     id="mobile-menu"
     class="hidden absolute top-full left-0 right-0 bg-black/90 shadow-lg z-50 md:hidden text-white"
